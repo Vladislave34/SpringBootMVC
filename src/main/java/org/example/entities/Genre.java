@@ -3,10 +3,11 @@ package org.example.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.util.List;
 
+@Data
 @Entity
 @Table(name = "genres")
-@Data
 public class Genre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,4 +16,7 @@ public class Genre {
     private String name;
     @Column(length = 1000)
     private String description;
+
+    @ManyToMany(mappedBy = "genres")
+    private List<Song> songs;
 }

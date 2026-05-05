@@ -81,6 +81,12 @@
             <version>1.5.5.Final</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.mpatric</groupId>
+            <artifactId>mp3agic</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
     </dependencies>
 
 </project>
