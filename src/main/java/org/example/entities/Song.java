@@ -17,7 +17,7 @@ public class Song {
     private String name;
 
     @Column(nullable = false, length = 150)
-    private String image;
+    private String fileName;
 
     @Column(nullable = false, length = 200)
     private String artist;

@@ -1,7 +1,6 @@
 package org.example.controllers;
 
 import lombok.RequiredArgsConstructor;
-import org.example.repositories.IGenreRepository;
 import org.example.services.GenreService;
 import org.example.services.SongService;
 import org.springframework.stereotype.Controller;
@@ -28,7 +27,7 @@ public class HomeController {
 
         model.addAttribute("songs", list);
 
-        return "songs";
+        return "songs/index";
     }
 
 }
